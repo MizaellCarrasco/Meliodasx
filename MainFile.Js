@@ -1,4 +1,10 @@
-  if (Argumen.toUpperCase() === "ENABLE") {
+const { Client, Collection } = require("discord.js");
+const { readdirSync } = require("fs");
+const { join } = require("path");
+const { TOKEN, PREFIX } = require("./util/EvobotUtil");
+/////////////////////////////////////////////////////////////
+
+if (Argumen.toUpperCase() === "ENABLE") {
   msg.channel.send(`Enable`);
   db.set(`${msg.guild.id}.Config.Welcome.ED`, "YA");
 };
